@@ -1,0 +1,28 @@
+# https://taskfile.dev
+
+version: '3'
+
+vars:
+  GREETING: Hello, World!
+
+tasks:
+  build:
+    cmds:
+      - go build -o dist/cdk2d2 main/main.go
+    silent: true
+
+  run:
+    cmds:
+      - go run main/main.go
+
+  install:
+    desc: local install mac
+    deps:
+      - build
+    cmds:
+      - cp dist/cdk2d2 /usr/local/bin/cdk2d2
+
+  test:
+    desc: Unit Tests
+    cmds:
+      - go test ./... -v

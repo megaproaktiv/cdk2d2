@@ -1,0 +1,40 @@
+{
+  "StackResources": [
+    {
+      "StackName": "LeastPrivilegesTsStack",
+      "StackId": "arn:aws:cloudformation:eu-central-1:123456789012:stack/LeastPrivilegesTsStack/18f4ff10-a9fe-11ed-8147-06ac58fc54ba",
+      "LogicalResourceId": "CDKMetadata",
+      "PhysicalResourceId": "18f4ff10-a9fe-11ed-8147-06ac58fc54ba",
+      "ResourceType": "AWS::CDK::Metadata",
+      "Timestamp": "2023-02-11T11:20:43.942000+00:00",
+      "ResourceStatus": "CREATE_COMPLETE",
+      "DriftInformation": {
+        "StackResourceDriftStatus": "NOT_CHECKED"
+      }
+    },
+    {
+      "StackName": "LeastPrivilegesTsStack",
+      "StackId": "arn:aws:cloudformation:eu-central-1:123456789012:stack/LeastPrivilegesTsStack/18f4ff10-a9fe-11ed-8147-06ac58fc54ba",
+      "LogicalResourceId": "Function76856677",
+      "PhysicalResourceId": "challenge-policy",
+      "ResourceType": "AWS::Lambda::Function",
+      "Timestamp": "2023-02-11T11:21:16.694000+00:00",
+      "ResourceStatus": "CREATE_COMPLETE",
+      "DriftInformation": {
+        "StackResourceDriftStatus": "NOT_CHECKED"
+      }
+    },
+    {
+      "StackName": "LeastPrivilegesTsStack",
+      "StackId": "arn:aws:cloudformation:eu-central-1:123456789012:stack/LeastPrivilegesTsStack/18f4ff10-a9fe-11ed-8147-06ac58fc54ba",
+      "LogicalResourceId": "FunctionServiceRole675BB04A",
+      "PhysicalResourceId": "LeastPrivilegesTsStack-FunctionServiceRole675BB04A-ZDFI3EO1XYYT",
+      "ResourceType": "AWS::IAM::Role",
+      "Timestamp": "2023-02-11T11:21:05.514000+00:00",
+      "ResourceStatus": "CREATE_COMPLETE",
+      "DriftInformation": {
+        "StackResourceDriftStatus": "NOT_CHECKED"
+      }
+    }
+  ]
+}

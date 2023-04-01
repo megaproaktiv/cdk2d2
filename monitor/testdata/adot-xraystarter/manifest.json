@@ -1,0 +1,350 @@
+{
+  "version": "21.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "adotstarter-auto.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "adotstarter-auto.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "adotstarter-auto": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "adotstarter-auto.template.json",
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/069cc75192d13f3f2a453aa1d430522bae6dc0dad0f567240004affb3cc8eca6.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "adotstarter-auto.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "adotstarter-auto.assets"
+      ],
+      "metadata": {
+        "/adotstarter-auto/adotstarter-ts": [
+          {
+            "type": "Connection",
+            "data": "items"
+          } ,
+          {
+            "type": "Show",
+            "data": "true"
+          }
+        ],
+        "/adotstarter-auto/adotstarter-ts/ServiceRole": [
+          {
+            "type": "Show",
+            "data": "true"
+          }
+        ],
+        "/adotstarter-auto/adotstarter-ts/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "adotstartertsServiceRole9ACAE7F8"
+          }
+        ],
+        "/adotstarter-auto/adotstarter-ts/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "adotstartertsServiceRoleDefaultPolicy73937D05"
+          }
+        ],
+        "/adotstarter-auto/adotstarter-ts/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "adotstarterts5C66C01C"
+          }
+        ],
+        "/adotstarter-auto/adotstarter-ts/LogRetention/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "adotstartertsLogRetention0F4A1E04"
+          }
+        ],
+        "/adotstarter-auto/adotstarter-ts/AllowInvoke:adotstarterautos3eventTopicDDD14269": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "adotstartertsAllowInvokeadotstarterautos3eventTopicDDD14269BD3B41AC"
+          }
+        ],
+        "/adotstarter-auto/adotstarter-ts/s3eventTopic/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "adotstartertss3eventTopicBF3F9440"
+          }
+        ],
+        "/adotstarter-auto/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRole9741ECFB"
+          }
+        ],
+        "/adotstarter-auto/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRoleDefaultPolicyADDA7DEB"
+          }
+        ],
+        "/adotstarter-auto/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aFD4BFC8A"
+          }
+        ],
+        "/adotstarter-auto/LambdaNameTS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaNameTS"
+          }
+        ],
+        "/adotstarter-auto/adotstarter-py": [
+          {
+            "type": "Show",
+            "data": "true"
+          },
+          {
+            "type": "Connection",
+            "data": "items"
+          }
+        ],
+        "/adotstarter-auto/adotstarter-py/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "adotstarterpyServiceRoleFE0E36B6"
+          }
+        ],
+        "/adotstarter-auto/adotstarter-py/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "adotstarterpyServiceRoleDefaultPolicyDA47C88B"
+          }
+        ],
+        "/adotstarter-auto/adotstarter-py/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "adotstarterpy24CEA125"
+          }
+        ],
+        "/adotstarter-auto/adotstarter-py/LogRetention/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "adotstarterpyLogRetentionCBAF2A9B"
+          }
+        ],
+        "/adotstarter-auto/adotstarter-py/AllowInvoke:adotstarterautos3eventTopicDDD14269": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "adotstarterpyAllowInvokeadotstarterautos3eventTopicDDD142694CCC54DF"
+          }
+        ],
+        "/adotstarter-auto/adotstarter-py/s3eventTopic/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "adotstarterpys3eventTopic92A5C937"
+          }
+        ],
+        "/adotstarter-auto/LambdaNamePy": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaNamePy"
+          }
+        ],
+        "/adotstarter-auto/adotstarter-go": [
+          {
+            "type": "Show",
+            "data": "true"
+          },
+          {
+            "type": "Connection",
+            "data": "items"
+          }
+        ],
+        "/adotstarter-auto/adotstarter-go/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "adotstartergoServiceRole95FCAA3F"
+          }
+        ],
+        "/adotstarter-auto/adotstarter-go/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "adotstartergoServiceRoleDefaultPolicy40E91988"
+          }
+        ],
+        "/adotstarter-auto/adotstarter-go/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "adotstartergo2987B222"
+          }
+        ],
+        "/adotstarter-auto/adotstarter-go/LogRetention/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "adotstartergoLogRetention337F55B9"
+          }
+        ],
+        "/adotstarter-auto/adotstarter-go/AllowInvoke:adotstarterautos3eventTopicDDD14269": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "adotstartergoAllowInvokeadotstarterautos3eventTopicDDD14269C4D961C7"
+          }
+        ],
+        "/adotstarter-auto/adotstarter-go/s3eventTopic/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "adotstartergos3eventTopicA35FF2D5"
+          }
+        ],
+        "/adotstarter-auto/LambdaNameGo": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaNameGo"
+          }
+        ],
+        "/adotstarter-auto/incoming": [
+          {
+            "type": "Show",
+            "data": "true"
+          },
+          {
+            "type": "Connection",
+            "data": "s3eventTopic"
+          }
+        ],
+        "/adotstarter-auto/incoming/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "incoming0B397865"
+          }
+        ],
+        "/adotstarter-auto/incoming/Notifications/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "incomingNotificationsC0478269"
+          }
+        ],
+        "/adotstarter-auto/BucketName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketName"
+          }
+        ],
+        "/adotstarter-auto/s3eventTopic": [
+          {
+            "type": "Show",
+            "data": "true"
+          },
+          {
+            "type": "Connection",
+            "data": "adotstarter-ts"
+          },
+          {
+            "type": "Connection",
+            "data": "adotstarter-go"
+          },
+          {
+            "type": "Connection",
+            "data": "adotstarter-py"
+          }
+        ],
+        "/adotstarter-auto/s3eventTopic/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "s3eventTopicB05B6E9B"
+          }
+        ],
+        "/adotstarter-auto/s3eventTopic/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "s3eventTopicPolicyC471AF1E"
+          }
+        ],
+        "/adotstarter-auto/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db834RoleB6FB88EC"
+          }
+        ],
+        "/adotstarter-auto/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db834RoleDefaultPolicy2CF63D36"
+          }
+        ],
+        "/adotstarter-auto/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db8347ECC3691"
+          }
+        ],
+        "/adotstarter-auto/items": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": {
+              "Ref": "items07D08F4B"
+            }
+          },
+          {
+            "type": "Show",
+            "data": "true"
+          }
+        ],
+        "/adotstarter-auto/items/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "items07D08F4B"
+          }
+        ],
+        "/adotstarter-auto/TableName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TableName"
+          }
+        ],
+        "/adotstarter-auto/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/adotstarter-auto/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/adotstarter-auto/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/adotstarter-auto/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "adotstarter-auto"
+    }
+  }
+}

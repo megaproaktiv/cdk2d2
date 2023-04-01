@@ -1,0 +1,304 @@
+{
+    "StackResourceSummaries": [
+        {
+            "LogicalResourceId": "BucketNotificationsHandler050a0587b7544547bf325f094a3db8347ECC3691",
+            "PhysicalResourceId": "xraystarter-BucketNotificationsHandler050a0587b754-k3ww1Xg0YzXx",
+            "ResourceType": "AWS::Lambda::Function",
+            "LastUpdatedTimestamp": "2023-02-17T12:12:41.366000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "BucketNotificationsHandler050a0587b7544547bf325f094a3db834RoleB6FB88EC",
+            "PhysicalResourceId": "xraystarter-BucketNotificationsHandler050a0587b754-11MFFZX8BEY75",
+            "ResourceType": "AWS::IAM::Role",
+            "LastUpdatedTimestamp": "2023-02-17T12:12:02.262000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "BucketNotificationsHandler050a0587b7544547bf325f094a3db834RoleDefaultPolicy2CF63D36",
+            "PhysicalResourceId": "xrays-Buck-77ZNWOVRFTU9",
+            "ResourceType": "AWS::IAM::Policy",
+            "LastUpdatedTimestamp": "2023-02-17T12:12:31.335000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "CDKMetadata",
+            "PhysicalResourceId": "2a3870a0-aebc-11ed-a689-027c7d824d38",
+            "ResourceType": "AWS::CDK::Metadata",
+            "LastUpdatedTimestamp": "2023-02-17T12:11:35.390000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aFD4BFC8A",
+            "PhysicalResourceId": "xraystarter-LogRetentionaae0aa3c5b4d4f87b02d85b201-vIoL86EcRCty",
+            "ResourceType": "AWS::Lambda::Function",
+            "LastUpdatedTimestamp": "2023-02-17T12:12:41.405000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRole9741ECFB",
+            "PhysicalResourceId": "xraystarter-LogRetentionaae0aa3c5b4d4f87b02d85b201-XP814DGQ4WA1",
+            "ResourceType": "AWS::IAM::Role",
+            "LastUpdatedTimestamp": "2023-02-17T12:12:02.268000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRoleDefaultPolicyADDA7DEB",
+            "PhysicalResourceId": "xrays-LogR-195J80QL07DAM",
+            "ResourceType": "AWS::IAM::Policy",
+            "LastUpdatedTimestamp": "2023-02-17T12:12:31.434000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "incoming0B397865",
+            "PhysicalResourceId": "xraystarter-incoming0b397865-k64q8uc8tk8g",
+            "ResourceType": "AWS::S3::Bucket",
+            "LastUpdatedTimestamp": "2023-02-17T12:11:55.691000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "incomingNotificationsC0478269",
+            "PhysicalResourceId": "incomingNotificationsC0478269",
+            "ResourceType": "Custom::S3BucketNotifications",
+            "LastUpdatedTimestamp": "2023-02-17T12:12:47.529000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "items07D08F4B",
+            "PhysicalResourceId": "items",
+            "ResourceType": "AWS::DynamoDB::Table",
+            "LastUpdatedTimestamp": "2023-02-17T12:11:45.944000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "s3eventTopicB05B6E9B",
+            "PhysicalResourceId": "arn:aws:sns:eu-central-1:139008737997:xraystarter-s3eventTopicB05B6E9B-VT89IfoSK7v5",
+            "ResourceType": "AWS::SNS::Topic",
+            "LastUpdatedTimestamp": "2023-02-17T12:11:35.767000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "s3eventTopicPolicyC471AF1E",
+            "PhysicalResourceId": "xraystarter-s3eventTopicPolicyC471AF1E-F42XSOHDIZV4",
+            "ResourceType": "AWS::SNS::TopicPolicy",
+            "LastUpdatedTimestamp": "2023-02-17T12:11:58.586000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "xraystartergo92905A8C",
+            "PhysicalResourceId": "xraystarter-go",
+            "ResourceType": "AWS::Lambda::Function",
+            "LastUpdatedTimestamp": "2023-02-17T12:12:41.276000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "xraystartergoAllowInvokexraystarters3eventTopic3F46A65ABA4DC372",
+            "PhysicalResourceId": "xraystarter-xraystartergoAllowInvokexraystarters3eventTopic3F46A65ABA4DC372-4SNL01YDVYMS",
+            "ResourceType": "AWS::Lambda::Permission",
+            "LastUpdatedTimestamp": "2023-02-17T12:12:54.503000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "xraystartergoLogRetention2C2BC01C",
+            "PhysicalResourceId": "/aws/lambda/xraystarter-go",
+            "ResourceType": "Custom::LogRetention",
+            "LastUpdatedTimestamp": "2023-02-17T12:12:47.186000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "xraystartergoServiceRoleC3D34D3A",
+            "PhysicalResourceId": "xraystarter-xraystartergoServiceRoleC3D34D3A-1KD2WS4LDZ6DU",
+            "ResourceType": "AWS::IAM::Role",
+            "LastUpdatedTimestamp": "2023-02-17T12:11:59.997000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "xraystartergoServiceRoleDefaultPolicy425C9AB6",
+            "PhysicalResourceId": "xrays-xray-1ECQI1NX904O",
+            "ResourceType": "AWS::IAM::Policy",
+            "LastUpdatedTimestamp": "2023-02-17T12:12:30.077000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "xraystartergos3eventTopic0C8E78B8",
+            "PhysicalResourceId": "arn:aws:sns:eu-central-1:139008737997:xraystarter-s3eventTopicB05B6E9B-VT89IfoSK7v5:a2fe4643-98cc-49bc-95af-5df9d1919710",
+            "ResourceType": "AWS::SNS::Subscription",
+            "LastUpdatedTimestamp": "2023-02-17T12:12:45.005000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "xraystarterpy57F97FB4",
+            "PhysicalResourceId": "xraystarter-py",
+            "ResourceType": "AWS::Lambda::Function",
+            "LastUpdatedTimestamp": "2023-02-17T12:12:44.749000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "xraystarterpyAllowInvokexraystarters3eventTopic3F46A65ACD6F2D8A",
+            "PhysicalResourceId": "xraystarter-xraystarterpyAllowInvokexraystarters3eventTopic3F46A65ACD6F2D8A-1K11FC5LHQCW9",
+            "ResourceType": "AWS::Lambda::Permission",
+            "LastUpdatedTimestamp": "2023-02-17T12:12:57.563000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "xraystarterpyLogRetention14B2F520",
+            "PhysicalResourceId": "/aws/lambda/xraystarter-py",
+            "ResourceType": "Custom::LogRetention",
+            "LastUpdatedTimestamp": "2023-02-17T12:12:49.453000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "xraystarterpyServiceRoleD837C153",
+            "PhysicalResourceId": "xraystarter-xraystarterpyServiceRoleD837C153-1X91886H5MW9W",
+            "ResourceType": "AWS::IAM::Role",
+            "LastUpdatedTimestamp": "2023-02-17T12:12:01.962000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "xraystarterpyServiceRoleDefaultPolicyA91A13F5",
+            "PhysicalResourceId": "xrays-xray-Y8IBY3MLFYDS",
+            "ResourceType": "AWS::IAM::Policy",
+            "LastUpdatedTimestamp": "2023-02-17T12:12:31.860000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "xraystarterpys3eventTopic05A7FB78",
+            "PhysicalResourceId": "arn:aws:sns:eu-central-1:139008737997:xraystarter-s3eventTopicB05B6E9B-VT89IfoSK7v5:ff6cfeb9-f78a-45cc-81c2-6b55e6801054",
+            "ResourceType": "AWS::SNS::Subscription",
+            "LastUpdatedTimestamp": "2023-02-17T12:12:47.774000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "xraystartertsAllowInvokexraystarters3eventTopic3F46A65A338AC70A",
+            "PhysicalResourceId": "xraystarter-xraystartertsAllowInvokexraystarters3eventTopic3F46A65A338AC70A-1V46V6EZGU37V",
+            "ResourceType": "AWS::Lambda::Permission",
+            "LastUpdatedTimestamp": "2023-02-17T12:12:55.968000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "xraystartertsFCA60B54",
+            "PhysicalResourceId": "xraystarter-ts",
+            "ResourceType": "AWS::Lambda::Function",
+            "LastUpdatedTimestamp": "2023-02-17T12:12:43.124000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "xraystartertsLogRetention13C9F077",
+            "PhysicalResourceId": "/aws/lambda/xraystarter-ts",
+            "ResourceType": "Custom::LogRetention",
+            "LastUpdatedTimestamp": "2023-02-17T12:12:48.180000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "xraystartertsServiceRoleC0FF6DBA",
+            "PhysicalResourceId": "xraystarter-xraystartertsServiceRoleC0FF6DBA-1DRKJYON9J81N",
+            "ResourceType": "AWS::IAM::Role",
+            "LastUpdatedTimestamp": "2023-02-17T12:12:02.005000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "xraystartertsServiceRoleDefaultPolicyDADE32E1",
+            "PhysicalResourceId": "xrays-xray-59Q29OFE3XOS",
+            "ResourceType": "AWS::IAM::Policy",
+            "LastUpdatedTimestamp": "2023-02-17T12:12:31.853000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "xraystartertss3eventTopic394C8AA2",
+            "PhysicalResourceId": "arn:aws:sns:eu-central-1:139008737997:xraystarter-s3eventTopicB05B6E9B-VT89IfoSK7v5:27a453eb-731f-4834-9c5a-7078f53875f3",
+            "ResourceType": "AWS::SNS::Subscription",
+            "LastUpdatedTimestamp": "2023-02-17T12:12:46.188000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        }
+    ]
+}

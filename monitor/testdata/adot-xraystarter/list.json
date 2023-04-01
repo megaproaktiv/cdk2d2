@@ -1,0 +1,304 @@
+{
+    "StackResourceSummaries": [
+        {
+            "LogicalResourceId": "BucketNotificationsHandler050a0587b7544547bf325f094a3db8347ECC3691",
+            "PhysicalResourceId": "adotstarter-auto-BucketNotificationsHandler050a058-FYssmB3TB2NF",
+            "ResourceType": "AWS::Lambda::Function",
+            "LastUpdatedTimestamp": "2023-03-02T08:05:51.147000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "BucketNotificationsHandler050a0587b7544547bf325f094a3db834RoleB6FB88EC",
+            "PhysicalResourceId": "adotstarter-auto-BucketNotificationsHandler050a058-X3SZQ674ZG51",
+            "ResourceType": "AWS::IAM::Role",
+            "LastUpdatedTimestamp": "2023-03-02T08:05:02.301000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "BucketNotificationsHandler050a0587b7544547bf325f094a3db834RoleDefaultPolicy2CF63D36",
+            "PhysicalResourceId": "adots-Buck-1JO610BP5EIIP",
+            "ResourceType": "AWS::IAM::Policy",
+            "LastUpdatedTimestamp": "2023-03-02T08:05:40.993000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "CDKMetadata",
+            "PhysicalResourceId": "cd484f90-b8d0-11ed-9183-06b8edd340ce",
+            "ResourceType": "AWS::CDK::Metadata",
+            "LastUpdatedTimestamp": "2023-03-02T08:04:30.666000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aFD4BFC8A",
+            "PhysicalResourceId": "adotstarter-auto-LogRetentionaae0aa3c5b4d4f87b02d8-sF7vrfRMGybr",
+            "ResourceType": "AWS::Lambda::Function",
+            "LastUpdatedTimestamp": "2023-03-02T08:05:49.794000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRole9741ECFB",
+            "PhysicalResourceId": "adotstarter-auto-LogRetentionaae0aa3c5b4d4f87b02d8-1AYPX6QNGOOQR",
+            "ResourceType": "AWS::IAM::Role",
+            "LastUpdatedTimestamp": "2023-03-02T08:05:01.912000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRoleDefaultPolicyADDA7DEB",
+            "PhysicalResourceId": "adots-LogR-1BT0U469CSRRS",
+            "ResourceType": "AWS::IAM::Policy",
+            "LastUpdatedTimestamp": "2023-03-02T08:05:39.850000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "adotstartergo2987B222",
+            "PhysicalResourceId": "adotstarter-go",
+            "ResourceType": "AWS::Lambda::Function",
+            "LastUpdatedTimestamp": "2023-03-02T08:05:57.411000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "adotstartergoAllowInvokeadotstarterautos3eventTopicDDD14269C4D961C7",
+            "PhysicalResourceId": "adotstarter-auto-adotstartergoAllowInvokeadotstarterautos3eventTopicDDD14269C4D961C7-1UBKQPX6WA989",
+            "ResourceType": "AWS::Lambda::Permission",
+            "LastUpdatedTimestamp": "2023-03-02T08:06:10.577000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "adotstartergoLogRetention337F55B9",
+            "PhysicalResourceId": "/aws/lambda/adotstarter-go",
+            "ResourceType": "Custom::LogRetention",
+            "LastUpdatedTimestamp": "2023-03-02T08:06:03.579000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "adotstartergoServiceRole95FCAA3F",
+            "PhysicalResourceId": "adotstarter-auto-adotstartergoServiceRole95FCAA3F-1JYW2ZI2UQHHZ",
+            "ResourceType": "AWS::IAM::Role",
+            "LastUpdatedTimestamp": "2023-03-02T08:05:01.781000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "adotstartergoServiceRoleDefaultPolicy40E91988",
+            "PhysicalResourceId": "adots-adot-1CWPLGHDLVNBZ",
+            "ResourceType": "AWS::IAM::Policy",
+            "LastUpdatedTimestamp": "2023-03-02T08:05:40.383000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "adotstartergos3eventTopicA35FF2D5",
+            "PhysicalResourceId": "arn:aws:sns:eu-central-1:139008737997:adotstarter-auto-s3eventTopicB05B6E9B-M40iqXVn8Ogk:a196b8e1-56b4-416d-a85f-4882b4402217",
+            "ResourceType": "AWS::SNS::Subscription",
+            "LastUpdatedTimestamp": "2023-03-02T08:06:01.506000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "adotstarterpy24CEA125",
+            "PhysicalResourceId": "adotstarter-py",
+            "ResourceType": "AWS::Lambda::Function",
+            "LastUpdatedTimestamp": "2023-03-02T08:05:59.598000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "adotstarterpyAllowInvokeadotstarterautos3eventTopicDDD142694CCC54DF",
+            "PhysicalResourceId": "adotstarter-auto-adotstarterpyAllowInvokeadotstarterautos3eventTopicDDD142694CCC54DF-ORAZWRZFHIZD",
+            "ResourceType": "AWS::Lambda::Permission",
+            "LastUpdatedTimestamp": "2023-03-02T08:06:12.747000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "adotstarterpyLogRetentionCBAF2A9B",
+            "PhysicalResourceId": "/aws/lambda/adotstarter-py",
+            "ResourceType": "Custom::LogRetention",
+            "LastUpdatedTimestamp": "2023-03-02T08:06:05.301000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "adotstarterpyServiceRoleDefaultPolicyDA47C88B",
+            "PhysicalResourceId": "adots-adot-1BMUAWSVGOVUH",
+            "ResourceType": "AWS::IAM::Policy",
+            "LastUpdatedTimestamp": "2023-03-02T08:05:42.761000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "adotstarterpyServiceRoleFE0E36B6",
+            "PhysicalResourceId": "adotstarter-auto-adotstarterpyServiceRoleFE0E36B6-80CCUK42MP6R",
+            "ResourceType": "AWS::IAM::Role",
+            "LastUpdatedTimestamp": "2023-03-02T08:05:01.823000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "adotstarterpys3eventTopic92A5C937",
+            "PhysicalResourceId": "arn:aws:sns:eu-central-1:139008737997:adotstarter-auto-s3eventTopicB05B6E9B-M40iqXVn8Ogk:b22913f3-1fde-495a-bb1b-3c91d49398ae",
+            "ResourceType": "AWS::SNS::Subscription",
+            "LastUpdatedTimestamp": "2023-03-02T08:06:03.452000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "adotstarterts5C66C01C",
+            "PhysicalResourceId": "adotstarter-ts",
+            "ResourceType": "AWS::Lambda::Function",
+            "LastUpdatedTimestamp": "2023-03-02T08:05:56.284000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "adotstartertsAllowInvokeadotstarterautos3eventTopicDDD14269BD3B41AC",
+            "PhysicalResourceId": "adotstarter-auto-adotstartertsAllowInvokeadotstarterautos3eventTopicDDD14269BD3B41AC-GRRTA7NKPQMB",
+            "ResourceType": "AWS::Lambda::Permission",
+            "LastUpdatedTimestamp": "2023-03-02T08:06:09.224000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "adotstartertsLogRetention0F4A1E04",
+            "PhysicalResourceId": "/aws/lambda/adotstarter-ts",
+            "ResourceType": "Custom::LogRetention",
+            "LastUpdatedTimestamp": "2023-03-02T08:06:02.692000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "adotstartertsServiceRole9ACAE7F8",
+            "PhysicalResourceId": "adotstarter-auto-adotstartertsServiceRole9ACAE7F8-1URMCJ5VPMMIR",
+            "ResourceType": "AWS::IAM::Role",
+            "LastUpdatedTimestamp": "2023-03-02T08:05:01.459000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "adotstartertsServiceRoleDefaultPolicy73937D05",
+            "PhysicalResourceId": "adots-adot-1PIQS9AMAVDBT",
+            "ResourceType": "AWS::IAM::Policy",
+            "LastUpdatedTimestamp": "2023-03-02T08:05:39.791000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "adotstartertss3eventTopicBF3F9440",
+            "PhysicalResourceId": "arn:aws:sns:eu-central-1:139008737997:adotstarter-auto-s3eventTopicB05B6E9B-M40iqXVn8Ogk:4f73e9e6-0b36-4483-af90-23db210d7c94",
+            "ResourceType": "AWS::SNS::Subscription",
+            "LastUpdatedTimestamp": "2023-03-02T08:05:59.842000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "incoming0B397865",
+            "PhysicalResourceId": "adotstarter-auto-incoming0b397865-m1thkqgzvse4",
+            "ResourceType": "AWS::S3::Bucket",
+            "LastUpdatedTimestamp": "2023-03-02T08:04:51.900000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "incomingNotificationsC0478269",
+            "PhysicalResourceId": "incomingNotificationsC0478269",
+            "ResourceType": "Custom::S3BucketNotifications",
+            "LastUpdatedTimestamp": "2023-03-02T08:05:57.005000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "items07D08F4B",
+            "PhysicalResourceId": "items",
+            "ResourceType": "AWS::DynamoDB::Table",
+            "LastUpdatedTimestamp": "2023-03-02T08:04:41.727000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "s3eventTopicB05B6E9B",
+            "PhysicalResourceId": "arn:aws:sns:eu-central-1:139008737997:adotstarter-auto-s3eventTopicB05B6E9B-M40iqXVn8Ogk",
+            "ResourceType": "AWS::SNS::Topic",
+            "LastUpdatedTimestamp": "2023-03-02T08:04:31.128000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "s3eventTopicPolicyC471AF1E",
+            "PhysicalResourceId": "adotstarter-auto-s3eventTopicPolicyC471AF1E-H5P3H63T41DB",
+            "ResourceType": "AWS::SNS::TopicPolicy",
+            "LastUpdatedTimestamp": "2023-03-02T08:04:54.512000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        }
+    ]
+}

@@ -1,0 +1,296 @@
+{
+  "version": "21.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "xraystarter.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "xraystarter.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "xraystarter": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "xraystarter.template.json",
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/0e39c99e61988b4f176717c767ce3547d0edaafd091e716f3b792e989c4711b4.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "xraystarter.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "xraystarter.assets"
+      ],
+      "metadata": {
+        "/xraystarter/xraystarter-ts": [
+          {
+            "type": "Show",
+            "data": true
+          },
+          {
+            "type": "References",
+            "data": "LambdaNameTS"
+          }
+        ],
+        "/xraystarter/xraystarter-ts/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "xraystartertsServiceRoleC0FF6DBA"
+          }
+        ],
+        "/xraystarter/xraystarter-ts/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "xraystartertsServiceRoleDefaultPolicyDADE32E1"
+          }
+        ],
+        "/xraystarter/xraystarter-ts/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "xraystartertsFCA60B54"
+          }
+        ],
+        "/xraystarter/xraystarter-ts/LogRetention/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "xraystartertsLogRetention13C9F077"
+          }
+        ],
+        "/xraystarter/xraystarter-ts/AllowInvoke:xraystarters3eventTopic3F46A65A": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "xraystartertsAllowInvokexraystarters3eventTopic3F46A65A338AC70A"
+          }
+        ],
+        "/xraystarter/xraystarter-ts/s3eventTopic/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "xraystartertss3eventTopic394C8AA2"
+          }
+        ],
+        "/xraystarter/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRole9741ECFB"
+          }
+        ],
+        "/xraystarter/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRoleDefaultPolicyADDA7DEB"
+          }
+        ],
+        "/xraystarter/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aFD4BFC8A"
+          }
+        ],
+        "/xraystarter/LambdaNameTS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaNameTS"
+          },
+          {
+            "type": "Show",
+            "data": true
+          }
+        ],
+        "/xraystarter/xraystarter-py/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "xraystarterpyServiceRoleD837C153"
+          }
+        ],
+        "/xraystarter/xraystarter-py/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "xraystarterpyServiceRoleDefaultPolicyA91A13F5"
+          }
+        ],
+        "/xraystarter/xraystarter-py/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "xraystarterpy57F97FB4"
+          }
+        ],
+        "/xraystarter/xraystarter-py/LogRetention/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "xraystarterpyLogRetention14B2F520"
+          }
+        ],
+        "/xraystarter/xraystarter-py/AllowInvoke:xraystarters3eventTopic3F46A65A": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "xraystarterpyAllowInvokexraystarters3eventTopic3F46A65ACD6F2D8A"
+          }
+        ],
+        "/xraystarter/xraystarter-py/s3eventTopic/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "xraystarterpys3eventTopic05A7FB78"
+          }
+        ],
+        "/xraystarter/LambdaNamePy": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaNamePy"
+          }
+        ],
+        "/xraystarter/xraystarter-go/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "xraystartergoServiceRoleC3D34D3A"
+          }
+        ],
+        "/xraystarter/xraystarter-go/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "xraystartergoServiceRoleDefaultPolicy425C9AB6"
+          }
+        ],
+        "/xraystarter/xraystarter-go/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "xraystartergo92905A8C"
+          }
+        ],
+        "/xraystarter/xraystarter-go/LogRetention/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "xraystartergoLogRetention2C2BC01C"
+          }
+        ],
+        "/xraystarter/xraystarter-go/AllowInvoke:xraystarters3eventTopic3F46A65A": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "xraystartergoAllowInvokexraystarters3eventTopic3F46A65ABA4DC372"
+          }
+        ],
+        "/xraystarter/xraystarter-go/s3eventTopic/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "xraystartergos3eventTopic0C8E78B8"
+          }
+        ],
+        "/xraystarter/LambdaNameGo": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaNameGo"
+          }
+        ],
+        "/xraystarter/incoming/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "incoming0B397865"
+          }
+        ],
+        "/xraystarter/incoming/Notifications/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "incomingNotificationsC0478269"
+          }
+        ],
+        "/xraystarter/BucketName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketName"
+          }
+        ],
+        "/xraystarter/s3eventTopic/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "s3eventTopicB05B6E9B"
+          }
+        ],
+        "/xraystarter/s3eventTopic/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "s3eventTopicPolicyC471AF1E"
+          }
+        ],
+        "/xraystarter/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db834RoleB6FB88EC"
+          }
+        ],
+        "/xraystarter/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db834RoleDefaultPolicy2CF63D36"
+          }
+        ],
+        "/xraystarter/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db8347ECC3691"
+          }
+        ],
+        "/xraystarter/items": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": {
+              "Ref": "items07D08F4B"
+            }
+          }
+        ],
+        "/xraystarter/items/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "items07D08F4B"
+          }
+        ],
+        "/xraystarter/TableName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TableName"
+          }
+        ],
+        "/xraystarter/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/xraystarter/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/xraystarter/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/xraystarter/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "xraystarter"
+    }
+  }
+}

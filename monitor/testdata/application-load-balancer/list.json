@@ -1,0 +1,364 @@
+{
+    "StackResourceSummaries": [
+        {
+            "LogicalResourceId": "ASG46ED3070",
+            "PhysicalResourceId": "LoadBalancerStack-ASG46ED3070-V2BF6KGJSCQ9",
+            "ResourceType": "AWS::AutoScaling::AutoScalingGroup",
+            "LastUpdatedTimestamp": "2023-03-22T20:50:19.902000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "ASGInstanceProfile0A2834D7",
+            "PhysicalResourceId": "LoadBalancerStack-ASGInstanceProfile0A2834D7-BF3KI4EJFGBC",
+            "ResourceType": "AWS::IAM::InstanceProfile",
+            "LastUpdatedTimestamp": "2023-03-22T20:49:22.522000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "ASGInstanceRoleE263A41B",
+            "PhysicalResourceId": "LoadBalancerStack-ASGInstanceRoleE263A41B-1XB07YX6JIH83",
+            "ResourceType": "AWS::IAM::Role",
+            "LastUpdatedTimestamp": "2023-03-22T20:47:08.981000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "ASGInstanceSecurityGroup0525485D",
+            "PhysicalResourceId": "sg-0ba63f206bd423c81",
+            "ResourceType": "AWS::EC2::SecurityGroup",
+            "LastUpdatedTimestamp": "2023-03-22T20:46:54.862000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "ASGInstanceSecurityGroupfromLoadBalancerStackLBSecurityGroupB71A4BA880C28BC1C3",
+            "PhysicalResourceId": "ASGInstanceSecurityGroupfromLoadBalancerStackLBSecurityGroupB71A4BA880C28BC1C3",
+            "ResourceType": "AWS::EC2::SecurityGroupIngress",
+            "LastUpdatedTimestamp": "2023-03-22T20:46:57.173000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "ASGLaunchConfigC00AF12B",
+            "PhysicalResourceId": "LoadBalancerStack-ASGLaunchConfigC00AF12B-ifBqsLDwXjXC",
+            "ResourceType": "AWS::AutoScaling::LaunchConfiguration",
+            "LastUpdatedTimestamp": "2023-03-22T20:49:25.555000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "ASGScalingPolicyAModestLoadC5714E5A",
+            "PhysicalResourceId": "arn:aws:autoscaling:eu-central-1:139008737997:scalingPolicy:d1fe6fdb-954b-4094-86ac-293535c69190:autoScalingGroupName/LoadBalancerStack-ASG46ED3070-V2BF6KGJSCQ9:policyName/LoadBalancerStack-ASGScalingPolicyAModestLoadC5714E5A-uF6FwhFqODlO",
+            "ResourceType": "AWS::AutoScaling::ScalingPolicy",
+            "LastUpdatedTimestamp": "2023-03-22T20:50:28.697000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "CDKMetadata",
+            "PhysicalResourceId": "9c838820-c8f2-11ed-b8bd-06f9bcddf1fc",
+            "ResourceType": "AWS::CDK::Metadata",
+            "LastUpdatedTimestamp": "2023-03-22T20:46:37.354000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "LB8A12904C",
+            "PhysicalResourceId": "arn:aws:elasticloadbalancing:eu-central-1:139008737997:loadbalancer/app/LoadB-LB8A1-1BQ55K8C0Q8B5/7a9bde607e445f9a",
+            "ResourceType": "AWS::ElasticLoadBalancingV2::LoadBalancer",
+            "LastUpdatedTimestamp": "2023-03-22T20:49:00.079000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "LBListener49E825B4",
+            "PhysicalResourceId": "arn:aws:elasticloadbalancing:eu-central-1:139008737997:listener/app/LoadB-LB8A1-1BQ55K8C0Q8B5/7a9bde607e445f9a/fe1c440d4ed846ad",
+            "ResourceType": "AWS::ElasticLoadBalancingV2::Listener",
+            "LastUpdatedTimestamp": "2023-03-22T20:49:03.837000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "LBListenerTargetGroupF04FCF6D",
+            "PhysicalResourceId": "arn:aws:elasticloadbalancing:eu-central-1:139008737997:targetgroup/LoadBa-LBLis-0C3XSQTCVK2W/55ad48a1a3b8f682",
+            "ResourceType": "AWS::ElasticLoadBalancingV2::TargetGroup",
+            "LastUpdatedTimestamp": "2023-03-22T20:47:06.042000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "LBSecurityGroup8A41EA2B",
+            "PhysicalResourceId": "sg-05b9cfd2f0af79bf9",
+            "ResourceType": "AWS::EC2::SecurityGroup",
+            "LastUpdatedTimestamp": "2023-03-22T20:46:55+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "LBSecurityGrouptoLoadBalancerStackASGInstanceSecurityGroupB0050A1780E09A2D36",
+            "PhysicalResourceId": "LoadBalancerStack-LBSecurityGrouptoLoadBalancerStackASGInstanceSecurityGroupB0050A1780E09A2D36-Y25Y4WRPA93P",
+            "ResourceType": "AWS::EC2::SecurityGroupEgress",
+            "LastUpdatedTimestamp": "2023-03-22T20:46:57.437000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "VPCB9E5F0B4",
+            "PhysicalResourceId": "vpc-0c571d5f278b53333",
+            "ResourceType": "AWS::EC2::VPC",
+            "LastUpdatedTimestamp": "2023-03-22T20:46:48.014000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "VPCIGWB7E252D3",
+            "PhysicalResourceId": "igw-0f9e1c4f95bc3942e",
+            "ResourceType": "AWS::EC2::InternetGateway",
+            "LastUpdatedTimestamp": "2023-03-22T20:46:52.378000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "VPCPrivateSubnet1DefaultRouteAE1D6490",
+            "PhysicalResourceId": "LoadB-VPCPr-1D6RYU1R095KE",
+            "ResourceType": "AWS::EC2::Route",
+            "LastUpdatedTimestamp": "2023-03-22T20:49:27.270000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "VPCPrivateSubnet1RouteTableAssociation347902D1",
+            "PhysicalResourceId": "rtbassoc-093faf0699a5f2e8a",
+            "ResourceType": "AWS::EC2::SubnetRouteTableAssociation",
+            "LastUpdatedTimestamp": "2023-03-22T20:47:05.014000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "VPCPrivateSubnet1RouteTableBE8A6027",
+            "PhysicalResourceId": "rtb-0d3f56cc03ffa13a1",
+            "ResourceType": "AWS::EC2::RouteTable",
+            "LastUpdatedTimestamp": "2023-03-22T20:47:01.213000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "VPCPrivateSubnet1Subnet8BCA10E0",
+            "PhysicalResourceId": "subnet-00ac3715fc0ab7585",
+            "ResourceType": "AWS::EC2::Subnet",
+            "LastUpdatedTimestamp": "2023-03-22T20:46:53.711000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "VPCPrivateSubnet2DefaultRouteF4F5CFD2",
+            "PhysicalResourceId": "LoadB-VPCPr-8B7IIT6BE7RU",
+            "ResourceType": "AWS::EC2::Route",
+            "LastUpdatedTimestamp": "2023-03-22T20:49:49.719000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "VPCPrivateSubnet2RouteTable0A19E10E",
+            "PhysicalResourceId": "rtb-007267339f07b0ba6",
+            "ResourceType": "AWS::EC2::RouteTable",
+            "LastUpdatedTimestamp": "2023-03-22T20:47:01.215000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "VPCPrivateSubnet2RouteTableAssociation0C73D413",
+            "PhysicalResourceId": "rtbassoc-05758e8ef835a5fc3",
+            "ResourceType": "AWS::EC2::SubnetRouteTableAssociation",
+            "LastUpdatedTimestamp": "2023-03-22T20:47:05.133000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "VPCPrivateSubnet2SubnetCFCDAA7A",
+            "PhysicalResourceId": "subnet-05d23e72e5e931fef",
+            "ResourceType": "AWS::EC2::Subnet",
+            "LastUpdatedTimestamp": "2023-03-22T20:46:53.625000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "VPCPublicSubnet1DefaultRoute91CEF279",
+            "PhysicalResourceId": "LoadB-VPCPu-C6N51M3G4BWH",
+            "ResourceType": "AWS::EC2::Route",
+            "LastUpdatedTimestamp": "2023-03-22T20:47:26.546000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "VPCPublicSubnet1EIP6AD938E8",
+            "PhysicalResourceId": "18.185.209.165",
+            "ResourceType": "AWS::EC2::EIP",
+            "LastUpdatedTimestamp": "2023-03-22T20:46:52.778000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "VPCPublicSubnet1NATGatewayE0556630",
+            "PhysicalResourceId": "nat-0ba11f0376a8e64ac",
+            "ResourceType": "AWS::EC2::NatGateway",
+            "LastUpdatedTimestamp": "2023-03-22T20:49:09.747000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "VPCPublicSubnet1RouteTableAssociation0B0896DC",
+            "PhysicalResourceId": "rtbassoc-098172375ddd98b7e",
+            "ResourceType": "AWS::EC2::SubnetRouteTableAssociation",
+            "LastUpdatedTimestamp": "2023-03-22T20:47:04.771000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "VPCPublicSubnet1RouteTableFEE4B781",
+            "PhysicalResourceId": "rtb-0d3ec4e3fc53bd3e7",
+            "ResourceType": "AWS::EC2::RouteTable",
+            "LastUpdatedTimestamp": "2023-03-22T20:47:01.020000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "VPCPublicSubnet1SubnetB4246D30",
+            "PhysicalResourceId": "subnet-099066efc8d4b7484",
+            "ResourceType": "AWS::EC2::Subnet",
+            "LastUpdatedTimestamp": "2023-03-22T20:46:54.083000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "VPCPublicSubnet2DefaultRouteB7481BBA",
+            "PhysicalResourceId": "LoadB-VPCPu-16Q3J9SN4GXPI",
+            "ResourceType": "AWS::EC2::Route",
+            "LastUpdatedTimestamp": "2023-03-22T20:47:26.740000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "VPCPublicSubnet2EIP4947BC00",
+            "PhysicalResourceId": "3.67.145.6",
+            "ResourceType": "AWS::EC2::EIP",
+            "LastUpdatedTimestamp": "2023-03-22T20:46:52.965000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "VPCPublicSubnet2NATGateway3C070193",
+            "PhysicalResourceId": "nat-08277fc0b122058ee",
+            "ResourceType": "AWS::EC2::NatGateway",
+            "LastUpdatedTimestamp": "2023-03-22T20:49:32.040000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "VPCPublicSubnet2RouteTable6F1A15F1",
+            "PhysicalResourceId": "rtb-07632dc7eacdd6342",
+            "ResourceType": "AWS::EC2::RouteTable",
+            "LastUpdatedTimestamp": "2023-03-22T20:47:01.163000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "VPCPublicSubnet2RouteTableAssociation5A808732",
+            "PhysicalResourceId": "rtbassoc-0edc66cbed32911c5",
+            "ResourceType": "AWS::EC2::SubnetRouteTableAssociation",
+            "LastUpdatedTimestamp": "2023-03-22T20:47:05.226000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "VPCPublicSubnet2Subnet74179F39",
+            "PhysicalResourceId": "subnet-0aa6df5ac600c21b5",
+            "ResourceType": "AWS::EC2::Subnet",
+            "LastUpdatedTimestamp": "2023-03-22T20:46:53.651000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "LogicalResourceId": "VPCVPCGW99B986DC",
+            "PhysicalResourceId": "LoadB-VPCVP-ZR3XNP7J23H",
+            "ResourceType": "AWS::EC2::VPCGatewayAttachment",
+            "LastUpdatedTimestamp": "2023-03-22T20:47:09.359000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        }
+    ]
+}

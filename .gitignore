@@ -1,0 +1,5 @@
+dist
+monitor/__debug_bin
+.vscode
+.DS_Store
+testdata/testphase
