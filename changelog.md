@@ -4,7 +4,7 @@
 ### Added
 
 - (todo) Use cloudformation template
-- Read CfnResources
+- (todo) Read CfnResources
 
 ### Fix
 - (todo) catch error wrong stack name
