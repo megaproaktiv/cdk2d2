@@ -124,13 +124,20 @@ Lambdas to table
 
 Resources are only drawn if `Show` is set `true`
 
+#### TypeScript
+
 ```ts
 resource.node.addMetadata("Show", "true")
 ```
 
+#### GO
+
 ```go
 resource.Node().AddMetadata(aws.String("Show"), aws.String("true"),nil)
 ```
+
+
+#### Python
 
 ```py
 auto_scaling_group.node.add_metadata("Show","true")
@@ -138,13 +145,19 @@ auto_scaling_group.node.add_metadata("Show","true")
 
 ### Connections
 
+#### TypeScript
+
 ```ts
 resource.node.addMetadata("Connection", otherResource.node.id)
 ```
 
+#### GO
+
 ```go
 resource.Node().AddMetadata(aws.String("Connection"), otherResource.Node().Id(),nil)
 ```
+
+#### Python
 
 ```py
 lb.node.add_metadata("Dependency", auto_scaling_group.node.id)
@@ -154,9 +167,19 @@ lb.node.add_metadata("Dependency", auto_scaling_group.node.id)
 
 ### Container
 
+#### TypeScript
+
+```ts
+resource.node.addMetadata("Container", otherResource.node.id)
+```
+
+#### GO
+
 ```go
 monolithSG.Node().AddMetadata(aws.String("Container"), vpc.Node().Id(),nil)
 ```
+
+#### Python
 
 ```py
 auto_scaling_group.node.add_metadata("Container",vpc.node.id)
